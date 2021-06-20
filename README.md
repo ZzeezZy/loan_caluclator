@@ -25,7 +25,7 @@ When we don't know how much to pay in the given time period
 
 **or**<br />
 
-When we don't know how much loan we taked
+When we don't know how much loan we took
 > python filename.py --type=annuity --interest=(interest-rate) --payment=(monthly-payment) --periods=(in-month)
 
 **example**
