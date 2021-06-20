@@ -11,17 +11,19 @@ Where:
 - n = number of payments. This is usually the number of months in which repayments will be made.
 
 ### To use this calculator user should use bash or cmd or shell and type
-**For type of diff:**
+**For type of diff:** <br />
 > python filename.py --type=diff --principal=loan-principal --interest=interest-rate --periods=in-months
 
-**For type of annuity:**
-```
+**For type of annuity:**<br />
 When we dont't know how much time it takes to pay the loan
-python filename.py --type=annuity --principal=number --interest=interest-rate --payment=monthly-payment
-or
+> python filename.py --type=annuity --principal=number --interest=interest-rate --payment=monthly-payment
+
+**or**<br />
+
 When we don't know how much to pay in the given time period
-python filename.py --type=annuity --principal=number --interest=interest-rate --period=in-months
-or
+> python filename.py --type=annuity --principal=number --interest=interest-rate --period=in-months
+
+**or**<br />
+
 When we don't know how much loan we taked
-python filename.py --type=annuity --interest=interest-rate --payment=monthly-payment --periods=in-month
-```
+> python filename.py --type=annuity --interest=interest-rate --payment=monthly-payment --periods=in-month
