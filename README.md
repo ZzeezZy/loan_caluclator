@@ -12,18 +12,34 @@ Where:
 
 ### To use this calculator user should use bash or cmd or shell and type
 **For type of diff:** <br />
-> python filename.py --type=diff --principal=loan-principal --interest=interest-rate --periods=in-months
+> python filename.py --type=diff --principal=(loan-principal) --interest=(interest-rate) --periods=(in-months)
 
 **For type of annuity:**<br />
 When we dont't know how much time it takes to pay the loan
-> python filename.py --type=annuity --principal=number --interest=interest-rate --payment=monthly-payment
+> python filename.py --type=annuity --principal=(loan-principal) --interest=(interest-rate) --payment=(monthly-payment)
 
 **or**<br />
 
 When we don't know how much to pay in the given time period
-> python filename.py --type=annuity --principal=number --interest=interest-rate --period=in-months
+> python filename.py --type=annuity --principal=(loan-principal) --interest=(interest-rate) --period=(in-months)
 
 **or**<br />
 
 When we don't know how much loan we taked
-> python filename.py --type=annuity --interest=interest-rate --payment=monthly-payment --periods=in-month
+> python filename.py --type=annuity --interest=(interest-rate) --payment=(monthly-payment) --periods=(in-month)
+
+**example**
+> python filename.py --type=diff --principal=1000000 --interest=10 --periods=10
+```
+Month 1: payment is 108334
+Month 2: payment is 107500
+Month 3: payment is 106667
+Month 4: payment is 105834
+Month 5: payment is 105000
+Month 6: payment is 104167
+Month 7: payment is 103334
+Month 8: payment is 102500
+Month 9: payment is 101667
+Month 10: payment is 100834
+Overpayment = 45837
+```
